@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #5b5bd6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #5b5bd6;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-text {
+    color: #666;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #5b5bd6;
+    margin: 5px 0;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #555;
+}
+
+
+/* Buttons */
+
+.buttons {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #5b5bd6;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #4444b8;
+}
+
+
+/* Common Sections */
+
+.section {
+    max-width: 900px;
+    min-height: 70vh;
+
+    margin: auto;
+    padding: 100px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5b5bd6;
+}
+
+.section > p {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #555;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: white;
+    border: 1px solid #ddd;
+
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+
+/* Coding Journey */
+
+.journey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+.journey span {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+
+/* Projects */
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+
+    width: 380px;
+    padding: 25px;
+
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    color: #5b5bd6;
+    margin-bottom: 5px;
+}
+
+.project-type {
+    font-weight: bold;
+    color: #555;
+}
+
+.project-card p {
+    margin: 12px 0;
+}
+
+.technologies {
+    font-size: 14px;
+    color: #666;
+}
+
+.project-btn {
+    display: inline-block;
+
+    background-color: #5b5bd6;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.project-btn:hover {
+    background-color: #4444b8;
+}
+
+
+/* Education */
+
+.education-card {
+    background-color: white;
+    border: 1px solid #ddd;
+
+    max-width: 600px;
+    width: 100%;
+
+    margin: auto;
+    padding: 25px;
+
+    text-align: center;
+    border-radius: 8px;
+}
+
+.education-card h3 {
+    color: #5b5bd6;
+}
+
+
+/* Contact */
+
+.contact p {
+    text-align: center;
+}
+
+.contact a {
+    color: #5b5bd6;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-buttons a {
+    background-color: white;
+    border: 1px solid #5b5bd6;
+
+    padding: 8px 18px;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: white;
+
+    border-top: 1px solid #ddd;
+
+    padding: 20px;
+    color: #666;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .section {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
